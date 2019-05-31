@@ -216,7 +216,7 @@ var/const/EXTRA_COST_FACTOR = 1.25
 
 /datum/autolathe/recipe/knife
 	name = "kitchen knife"
-	path = /obj/item/weapon/material/knife
+	path = /obj/item/weapon/material/knife/kitchen
 	category = "General"
 
 /datum/autolathe/recipe/taperecorder
@@ -321,6 +321,11 @@ var/const/EXTRA_COST_FACTOR = 1.25
 /datum/autolathe/recipe/implanter
 	name = "implanter"
 	path = /obj/item/weapon/implanter
+	category = "Medical"
+
+/datum/autolathe/recipe/pill_bottle
+	name = "pill bottle"
+	path = /obj/item/weapon/storage/pill_bottle
 	category = "Medical"
 
 /datum/autolathe/recipe/syringegun_ammo
@@ -472,6 +477,12 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	path = /obj/item/weapon/hand_labeler
 	category = "General"
 
+/datum/autolathe/recipe/machete
+	name = "fabricated machete"
+	path = /obj/item/weapon/material/hatchet/machete/steel
+	category = "Arms and Ammunition"
+	resources = list(MATERIAL_STEEL = 15000, MATERIAL_PLASTIC = 2500)
+
 /datum/autolathe/recipe/flamethrower
 	name = "flamethrower"
 	path = /obj/item/weapon/flamethrower/full
@@ -576,7 +587,7 @@ var/const/EXTRA_COST_FACTOR = 1.25
 
 /datum/autolathe/recipe/tacknife
 	name = "tactical knife"
-	path = /obj/item/weapon/material/hatchet/tacknife
+	path = /obj/item/weapon/material/knife/combat
 	hidden = 1
 	category = "Arms and Ammunition"
 

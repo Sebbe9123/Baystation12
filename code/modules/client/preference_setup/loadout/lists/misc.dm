@@ -63,12 +63,17 @@
 
 /datum/gear/knife
 	display_name = "folding knife"
-	path = /obj/item/weapon/material/kitchen/utensil/knife/folding
+	path = /obj/item/weapon/material/knife/folding
 	cost = 3
 
 /datum/gear/knife_wood
 	display_name = "peasant knife"
-	path = /obj/item/weapon/material/kitchen/utensil/knife/folding/wood
+	path = /obj/item/weapon/material/knife/folding/wood
+	cost = 3
+
+/datum/gear/knife_tacticool
+	display_name = "tactical folding knife"
+	path = /obj/item/weapon/material/knife/folding/tacticool
 	cost = 3
 
 /datum/gear/lunchbox
@@ -208,3 +213,9 @@
 	display_name = "bible"
 	path = /obj/item/weapon/storage/bible
 	cost = 2
+
+/datum/gear/swiss
+	display_name = "multi-tool"
+	path = /obj/item/weapon/material/knife/folding/swiss
+	cost = 4
+	flags = GEAR_HAS_COLOR_SELECTION
